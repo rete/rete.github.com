@@ -67,8 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
+  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h2 {
@@ -256,6 +257,34 @@ form {
   padding: 20px;
 }
 
+nav {
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+	background-color: #222;
+	overflow: hidden;
+	font-size: 20px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Create a style for the first level items */
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -266,7 +295,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 840px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -286,6 +315,88 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
+#contactme_banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 200px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url('../images/icon_mail.svg') #DF0101 no-repeat 95% 50%;
+  background-size: 30px 30px;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#photo_id {
+	float :left;
+	border-radius: 10px;
+	height: 150px;
+	width: auto;
+	max-height: 200px;
+}
+
+.current_position {
+  float: right;
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 2px;
+  background: #e6e6e6;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.thesis_title {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 650px;
+	text-align: center;
+	font-style: italic;
+}
+
+.current_position_contents {
+	font-size: 20px;
+}
+
+.pfa_evt_display_img {
+	display: block;
+	float: right;
+	width: 200px;
+	height: auto;
+}
+
+#xdrstream_img {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	height: auto;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.repository_box {
+  display: block;
+  margin-right: 10px;
+  padding: 10px 50px 10px 10px;
+  float: left;
+  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+.project_description {
+	text-align: justify;
+}
+
 #header_wrap {
   background: #212121;
   background: -moz-linear-gradient(top, #373737, #212121);
@@ -300,14 +411,16 @@ Full-Width Styles
 }
 
 #project_title {
-  margin: 0;
+  margin-left: 150px;
   color: #fff;
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
+  background: none; 
 }
 
 #project_tagline {
+  margin-left: 150px;
   color: #fff;
   font-size: 24px;
   font-weight: 300;
@@ -362,13 +475,56 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
+  min-height: 500px;
+}
+
+.main_content {
+  padding-top: 40px;
+  min-height: 500px;
 }
 
 #footer_wrap {
   background: #212121;
 }
 
+.map {
+	text-align: center;
+}
 
+.address {
+	display: block;
+	width: 250px;
+	margin-left: 10px;
+	padding: 10px 10px 10px 10px;
+	background: #e3e3e3;
+	border-radius: 5px;
+	float: left;
+}
+
+.address-key {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.download-pdf-box {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  padding: 5px 50px 5px 10px;
+  float: left;
+  background: url('../images/acrobat-reader-icon.png') #FF8000 no-repeat 95% 50%;
+  background-size: 30px 30px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+.reference-box {
+	display: block;
+	padding-left: 220px;
+	text-align: justify;
+}
 
 /*******************************************************************************
 Small Device Styles
