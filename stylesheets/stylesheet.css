@@ -341,7 +341,7 @@ Full-Width Styles
 
 .current_position {
   float: right;
-  width: 200px;
+  width: 300px;
   margin-left: 10px;
   border-radius: 2px;
   background: #e6e6e6;
@@ -367,6 +367,7 @@ Full-Width Styles
 	float: right;
 	width: 200px;
 	height: auto;
+	margin-left: 20px;
 }
 
 #xdrstream_img {
@@ -391,6 +392,10 @@ Full-Width Styles
   color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-radius: 10px;
+}
+
+.just {
+	text-align: justify;	
 }
 
 .project_description {
