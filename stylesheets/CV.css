@@ -1,0 +1,106 @@
+
+
+
+ul.checkmark {
+	list-style-type: none;
+}
+
+ul.checkmark li:before { 
+	content:'\2713';
+}
+
+
+/* .inner {
+  position: relative;
+  max-width: 840px;
+  padding: 20px 10px;
+  margin: 0 auto;
+} */
+
+
+
+
+
+.header-name {
+	font-size: 30px;
+}
+
+.header-banner {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.header-left {
+	display: block;
+}
+
+.header-right {
+	font-size: 25px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+.skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ul.skills-enum li {
+	content : &#10004;
+}
+
+.technical-skills {
+	text-align: left;
+	margin-right: 20px;
+}
+
+.computing-skills {
+	text-align: left;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+.block-entry {
+	display: block;
+	width: 100%;
+}
+
+.entry {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.entry-left {
+	float: left;
+	position: relative;
+	margin-right: 10px;
+	width: 150px;
+}
+
+.entry-content {
+	margin-right: 20px;
+	flex: 1;
+}
+
+.entry-right {
+	float: right;
+	position: relative;
+	width: 200px;
+	margin: auto;
+}
+
+
