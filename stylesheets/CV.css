@@ -19,7 +19,13 @@ ul.checkmark li:before {
 
 
 
-
+.pdf-version {
+	padding-top: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 0px;
+}
 
 .header-name {
 	font-size: 30px;
