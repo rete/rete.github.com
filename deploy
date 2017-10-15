@@ -1,0 +1,1 @@
+ncftpput -R -v -u "u277686927" ftp.lyorete.esy.es /public_html ./*
