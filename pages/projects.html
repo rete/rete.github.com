@@ -5,28 +5,28 @@
 		<meta charset='utf-8'>
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
 		<meta name="description" content="Remi Ete - Home page">
-		
+
 		<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
 		<link rel="stylesheet" href="/stylesheets/shCore.css" type="text/css" />
   		<link rel="stylesheet" href="/stylesheets/shThemeDefault.css" type="text/css" />
-		
+
 		<script src="http://www.jquery.info/scripts/jquery-1.0.1.pack.js" type="text/javascript"></script>
-		
+
 		<script type="text/javascript">
-		
+
 		$(document).ready(function () {
 			$("#header_wrap").load("/base/header.html");
 			$("#nav_bar_wrap").load("/base/navigation.html");
 			$("#footer_wrap").load("/base/footer.html");
 		});
-		
+
 		</script>
-		
-		<title>Remi Ete - Projets</title>
+
+		<title>Remi Ete - Projects</title>
 	</head>
-	
+
 	<body>
-		
+
 		<!-- HEADER -->
 	    <div id="header_wrap" class="outer">
 	    </div>
@@ -35,31 +35,31 @@
 		<div id="nav_bar_wrap" class="outer">
 		</div>
 
-		<div id="main_content_wrap" class="outer">	
+		<div id="main_content_wrap" class="outer">
 			<section class="inner main_content">
-				
+
 				<h1> Mes projets </h1>
-			
+
 				<p class="project_description">Je travaille sur plusieurs projets informatiques, faisant partis ou non de ma thèse à l'IPNL.
-				Tous ces projets sont développés avec <a href="https://git-scm.com/">git</a>, sont <em>open-source</em> et gratuits. 
+				Tous ces projets sont développés avec <a href="https://git-scm.com/">git</a>, sont <em>open-source</em> et gratuits.
 				Les petits projets sont la plupart du temps maintenus dans un dépôt github sur mon compte personnel
 				alors que les plus gros sont généralement inscrits dans une collaboration plus grande et maintenus sur une page github dédiée.
 				</p>
-								
-								
-								
-								
+
+
+
+
 				<h2>DQM4HEP - Data Quality Monitoring for High Energy Physics</h2>
 				<a class="repository_box" href="https://github.com/DQM4HEP">Dépôts du projet</a>
-				
+
 				<p class="project_description">
 				DQM4HEP est un framework C++ pour analyser et rendre compte de la qualité des données en ligne, dans le domaine de la physique des hautes énergies.
 				Le logiciel découple la partie transmission des données brutes venant d'un ou plusieurs détecteurs vers le framework, l'analyse de données faites par les physiciens et la visualisation de celles-ci sur des interfaces graphiques dédiées.
 				Toutes ces parties sont conçues pour fonctionner indépendamment dans des processus différents (meme sur des machines différentes) et sont réliés par communication réseau via l'API <a href="https://dim.web.cern.ch/dim/" >dim</a>.
 				</p>
-				
+
 				<p class="project_description"> Le logiciel fournit des fonctionalités principales suivantes :</p>
-				
+
 				<ul>
 					<li>Système distribué d'évènements physiques suivant une architecture client/serveur</li>
 					<li>Un jeu d'interfaces utilisateur conçues pour l'analyse de qualité de données</li>
@@ -70,25 +70,25 @@
 					<li>Conçu pour des simples prototypes de détecteurs jusqu'à un système complexe de détecteurs type LHC</li>
 					<li>Interface vers un logbook (elog)</li>
 				</ul>
-				
+
 				<p>Le projet posséde sa propre <a href="http://dqm4hep.github.io">page web</a>. Il est libre, gratuit et sous licence GPL.</p>
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
 				<h2>ArborPFA - Arbor Particle Flow Algorithm</h2>
 				<a class="repository_box" href="https://github.com/ArborPFA">Dépôts du projet</a>
-				
+
 				<p class="project_description">
 				ArborPFA est une implémentation C++ d'un algorithme de suivi de particules (PFA) développé avec le framework <a href="https://github.com/PandoraPFA/PandoraSDK">PandoraSDK</a>.
-				
+
 				<p class="project_description">L'idée de cet algorithme de <em>clustering</em> est basée sur l'idée que les gerbes électromagnétiques et hadroniques dans les calorimètres à échantillonage suivent une topologie en arbre orientée.
 				Le but est d'utiliser des dépositions d'énergies dans les calorimètres comme des points de connexion pour reconstruire le dévelopement en arbre des gerbes.
 				L'implémentation ne dépend d'aucun modèle de données (edm) du fait de l'utilisation du framework PandoraSDK. L'algorithme peut donc être appliqué à n'importe quel détecteur de physique des hautes énergies, pourvu que la granularité des détecteurs le permette.
 				</p>
-				
+
 				<img src="/images/pfa_evt_display.png" class="pfa_evt_display_img" title="Vue d'un évènement physique dans le détecteur ILD de l'expérience ILC suite à une collision e+e-"></img>
 				<p class="project_description">Le projet fourni le jeu de sous paquets suivant :
 				<ul>
@@ -96,35 +96,35 @@
 				  <li> <a href="https://github.com/ArborPFA/MarlinArbor">MarlinArbor</a> : l'interface Marlin (ILCSOFT) qui lance les algorithmes</li>
 				  <li> <a href="https://github.com/ArborPFA/ArborPFA">ArborPFA</a> : le paquet principal d'installation tout-en-un</li>
 				</ul>
-				
+
 				<p class="project_description">Le projet à tout d'abord été lancé par Henri Videau pour l'expérience ALEPH puis ensuite adapté pour l'expérience ILC par Manqui Ruan.</p>
 				<p class="project_description">Tout les paquets sont libres, gratuits et sont sous licence GPL.</p>
 				<br/>
-				
-				
-				
-				
+
+
+
+
 				<h2>xdrstream - eXternal Data Representation Streaming</h2>
 				<a class="repository_box" href="https://github.com/rete/xdrstream">Dépôt du projet</a>
 				<p class="project_description">Xdrstream est une librairie C++ pour lire et écrire des données brutes au format XDR dans différents conteneurs (fichier binaire, mémoire tampon, socket UNIX).
-				L'intéret principal de cette librarie est le découplage entre <strong>les données</strong> que l'utilisateur veut lire/écrire, <strong>comment</strong> il veut les lire/écrire ces données et <strong>où</strong> il veut les lire/écrire. 
+				L'intéret principal de cette librarie est le découplage entre <strong>les données</strong> que l'utilisateur veut lire/écrire, <strong>comment</strong> il veut les lire/écrire ces données et <strong>où</strong> il veut les lire/écrire.
 				Les données sérialisées sont organisées en <strong><em>record</em></strong> dans lequel l'utilisateur définit une liste de <strong>bloc</strong> de données. Chaque <em>record</em> ou bloc est précédé d'un en-tête permettant de sauter la lecture de ce dernier.
 				Ce mécanisme permet d'éviter d'avoir à lire un grand nombre de données avant d'avoir accès à celle que l'utilisateur souhaite obtenir.
 				<img id="xdrstream_img" src="/documents/xdrstream_structure.png"> </img>
-				
+
 				</p>
 				<p class="project_description">Le projet est libre, gratuit et sous licence GPL.</p>
-				
-				
-				
-				
+
+
+
+
 				<h2>CfgParser</h2>
 				<a class="repository_box" href="https://github.com/rete/CfgParser">Dépôt du projet</a>
-				<p class="project_description">CfgParser est une librarie C++ permettant de lire et écrire des données au format ini (section - clé - valeur) compatible avec son homologue python, le <a href="https://docs.python.org/2/library/configparser.html">ConfigParser</a>. 
+				<p class="project_description">CfgParser est une librarie C++ permettant de lire et écrire des données au format ini (section - clé - valeur) compatible avec son homologue python, le <a href="https://docs.python.org/2/library/configparser.html">ConfigParser</a>.
 				La syntaxe est conçue pour aussi courte que l'implémentation en python.</p>
-				
+
 				<p class="project_description"> Suivant l'exemple de fichier :</p>
-				
+
 <pre class="brush: text">
 # myfile.cfg
 
@@ -142,35 +142,35 @@ MyListOfIntValues = 12:45:32:78:4589
 [AnotherSection]
 
 AStringValue = A short or long description of whatever you want ...
-</pre> 
+</pre>
 				<p class="project_description"> Il est possible de le lire de la facon suivante :</p>
 
 <pre class="brush: cpp">
 CfgParser parser;
 
 // Lis un fichier seul
-parser.read("myfile.cfg"); 
+parser.read("myfile.cfg");
 
 // Récupère une valeur apartir du nom de la section et la clé
 int value = parser.getValue< int >("MySection", "MyIntValue");
 
 // Récupère une liste de valeurs !
-std::vector< int > intList = 
+std::vector< int > intList =
 	parser.getValue< std::vector< int > >("MySection", "MyListOfIntValues");
 </pre>
 
 				<p class="project_description">Le projet est libre, gratuit et sous licence GPL.</p>
-				
+
 			</section>
 		</div>
-		
+
 		<!-- FOOTER  -->
 		<div id="footer_wrap" class="outer">
 		</div>
-		
+
 		<script src="/javascripts/shCore.js"></script>
 		<script src="/javascripts/shBrushPlain.js"></script>
-		<script src="/javascripts/shBrushCpp.js"></script>		
+		<script src="/javascripts/shBrushCpp.js"></script>
 		<script>
 			SyntaxHighlighter.all()
 		</script>
