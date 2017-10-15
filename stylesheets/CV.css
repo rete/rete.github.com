@@ -5,7 +5,7 @@ ul.checkmark {
 	list-style-type: none;
 }
 
-ul.checkmark li:before { 
+ul.checkmark li:before {
 	content:'\2713';
 }
 
@@ -64,11 +64,13 @@ ul.skills-enum li {
 
 .technical-skills {
 	text-align: left;
+	width: 40%;
 	margin-right: 20px;
 }
 
 .computing-skills {
 	text-align: left;
+	width: 50%;
 	margin-left: 20px;
 }
 
@@ -108,5 +110,3 @@ ul.skills-enum li {
 	width: 200px;
 	margin: auto;
 }
-
-
