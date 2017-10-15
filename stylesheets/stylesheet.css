@@ -304,7 +304,7 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  right: 10px;
+  right: 20px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
@@ -370,7 +370,7 @@ Full-Width Styles
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 650px;
-	text-align: center;
+	text-align: left;
 	font-style: italic;
 }
 
@@ -411,7 +411,7 @@ Full-Width Styles
 }
 
 .just {
-	text-align: justify;	
+	text-align: justify;
 }
 
 .project_description {
@@ -437,7 +437,7 @@ Full-Width Styles
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
-  background: none; 
+  background: none;
 }
 
 #project_tagline {
