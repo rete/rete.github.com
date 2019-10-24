@@ -399,15 +399,42 @@ Full-Width Styles
 	font-weight: bold;
 }
 
+.project_home_box {
+  display: block;
+  margin-right: 10px;
+  padding: 10px 60px 10px 10px;
+  float: left;
+  background: url('../images/website.svg') #E06262 no-repeat 95% 50%;
+  background-size: 36px auto;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  border-radius: 10px;
+}
+
+.project_resource_box {
+  display: block;
+  margin-right: 10px;
+  padding: 10px 60px 10px 10px;
+  float: left;
+  background: url('../images/book-stack.svg') #56FF69 no-repeat 95% 90%;
+  background-size: 36px auto;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  border-radius: 10px;
+}
+
 .repository_box {
   display: block;
   margin-right: 10px;
-  padding: 10px 50px 10px 10px;
+  padding: 10px 60px 10px 10px;
   float: left;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url('../images/github-icon.jpg') #0090ff no-repeat 95% 50%;
+  background-size: 36px auto;
   font-weight: 700;
   color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0,0,0,1);
   border-radius: 10px;
 }
 
