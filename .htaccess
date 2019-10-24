@@ -1,5 +1,5 @@
-#RewriteEngine on
-#RewriteBase /
+RewriteEngine on
+RewriteBase /
 #RewriteCond %{REQUEST_fileNAME} !-d
 #RewriteCond %{REQUEST_fileNAME} !-f
 #RewriteRule (.*) /$1.html [L]
