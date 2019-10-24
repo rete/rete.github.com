@@ -349,6 +349,7 @@ Full-Width Styles
 
 #photo_id {
 	float :left;
+  margin-left: -100px;
 	border-radius: 150px;
 	height: 150px;
 	width: 150px;
@@ -432,7 +433,7 @@ Full-Width Styles
 }
 
 #project_title {
-  margin-left: 200px;
+  margin-left: 100px;
   color: #fff;
   font-size: 42px;
   font-weight: 700;
@@ -441,7 +442,7 @@ Full-Width Styles
 }
 
 #project_tagline {
-  margin-left: 200px;
+  margin-left: 100px;
   color: #fff;
   font-size: 24px;
   font-weight: 300;
