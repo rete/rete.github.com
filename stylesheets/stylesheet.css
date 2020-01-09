@@ -350,10 +350,11 @@ Full-Width Styles
 #photo_id {
 	float :left;
   margin-left: -100px;
+  margin-right: 50px;
 	border-radius: 150px;
-	height: 150px;
-	width: 150px;
-	max-height: 150px;
+	height: 200px;
+	width: 200px;
+	max-height: 200px;
 }
 
 .current_position {
