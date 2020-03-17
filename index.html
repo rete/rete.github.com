@@ -1,62 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html>
-
-	<head>
-		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<meta name="description" content="Rémi Ete - Page personnel">
-
-		<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
-
-		<script src="http://www.jquery.info/scripts/jquery-1.0.1.pack.js" type="text/javascript"></script>
-
-		<script type="text/javascript">
-
- 		$(document).ready(function () {
-			$("#header_wrap").load("/base/header.html");
-			$("#nav_bar_wrap").load("/base/navigation.html");
-			$("#footer_wrap").load("/base/footer.html");
-		});
-
-		</script>
-
-		<title>Rémi Ete - Home</title>
-	</head>
-
-	<body>
-
-	  <!-- HEADER -->
-    <div id="header_wrap" class="outer">
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <!--- basic page needs    ================================================== -->
+    <meta charset="utf-8"/>
+    <title>Remi Ete</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile specific metas    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- CSS    ================================================== -->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/vendor.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- script    ================================================== -->
+    <script src="js/modernizr.js">
+    </script>
+    <script src="js/pace.min.js">
+    </script>
+    <!-- favicons    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  </head>
+  <body id="top">
+    <!-- header    ================================================== -->
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <img src="images/logo2.png" alt="Homepage"/>
+        </a>
+      </div>
+      <nav class="header-nav-wrap">
+        <ul class="header-nav">
+          <li class="current">
+            <a class="smoothscroll"  href="#home" title="home">Home</a>
+          </li>
+          <li>
+            <a class="smoothscroll"  href="#about" title="about">About</a>
+          </li>
+          <li>
+            <a class="smoothscroll"  href="#experience" title="experience">Experience</a>
+          </li>
+          <li>
+            <a class="smoothscroll"  href="#publications" title="publications">Publications</a>
+          </li>
+          <li>
+            <a class="smoothscroll"  href="#projects" title="projects">Projects</a>
+          </li>
+          <li>
+            <a class="smoothscroll"  href="#contact" title="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header-menu-toggle" href="#0">
+        <span>Menu</span>
+      </a>
+    </header>
+    <!-- end s-header -->
+    <!-- home   ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/REMI.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+      <div class="overlay">
+      </div>
+      <div class="shadow-overlay">
+      </div>
+      <div class="home-content">
+        <div class="row home-content__main">
+          <h3>Professional website</h3>
+          <h1>Dr. Remi Ete.<br/>HEP Computing.</h1>
+          <div class="home-content__scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+              <span>Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end home-content -->
+      <ul class="home-social">
+        <li>
+          <a href="https://github.com/rete">
+            <i class="im im-github" aria-hidden="true">
+            </i>
+            <span>Github</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/rémi-eté-623510102">
+            <i class="im im-linkedin" aria-hidden="true">
+            </i>
+            <span>Linkedin</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:remi.ete@desy.de">
+            <i class="im im-mail" aria-hidden="true">
+            </i>
+            <span>Email</span>
+          </a>
+        </li>
+      </ul>
+      <!-- end home-social -->
+    </section>
+    <!-- end s-home -->
+    <!-- about    ================================================== -->
+    <section id="about" class="s-about target-section">
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full text-center">
+          <h3>About</h3>
+          <h1>More About Me</h1>
+          <p class="lead">
+            Doctor in High Energy Physics, I develop software for future large collider
+            projects, such as the 
+            <a class="" href="http://www.linearcollider.org">International Linear Collider</a> 
+            (ILC). I develop algorithms to identify particle collision products in 
+            large detectors and understand the physics behind each collision.
+          </p>
+          <p class="lead">
+            I'm currently developping Marlin, our C++ data analysis framework, 
+            towards a usage on multi-core machines.
+          </p>
+        </div>
+      </div>
+      <div class="row about-content">
+        <div class="col-six tab-full left">
+          <h3></h3>
+          <!-- <h3>And a bit more again</h3> -->
+          <p>
+            My work in High Energy Physics had started during my PhD thesis during
+            which I developed a novel particle flow reconstruction algorithm approach
+            based on the tree-like development of electromagnetic and hadronic showers
+            observed in our detectors. This was indeed a conbination of HEP research 
+            and software development.
+          </p>
+          <p>
+            Since then I have this passion for software and in particular in the 
+            HEP research field. My next research topics where very much targeted
+            on HEP computing, including HEP application development, full-stack 
+            software development / deployment and HEP event processing framework
+            development. The latter is currently my main topic; I'm refactoring
+            and extending our lovely event processing framework Marlin towards
+            a multi-threaded version called MarlinMT. 
+          </p>
+        </div>
+        <div class="col-six tab-full right">
+          <h3>Programming and research skills.</h3>
+          <ul class="skill-bars">
+            <li>
+              <div class="progress percent90">
+                <span>90%</span>
+              </div>
+              <strong>C++ 11/14/17</strong>
+            </li>
+            <li>
+              <div class="progress percent80">
+                <span>80%</span>
+              </div>
+              <strong>Software development/architecture</strong>
+            </li>
+            <li>
+              <div class="progress percent85">
+                <span>85%</span>
+              </div>
+              <strong>Particle flow calorimetry</strong>
+            </li>
+            <li>
+              <div class="progress percent60">
+                <span>60%</span>
+              </div>
+              <strong>HTML/CSS/javascript</strong>
+            </li>
+            <li>
+              <div class="progress percent100">
+                <span>100%</span>
+              </div>
+              <strong>Making non sense skill lists</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end about-content -->
+      <div class="row about-content about-content--buttons">
+        <div class="tab-full align-center">
+          <a href="documents/CV/CV_eng_phy_v3.pdf" class="btn btn--primary half-width">Download My CV</a>
+        </div>
+      </div>
+      <!-- end about-content buttons -->
+    </section>
+    <section id="experience" class="s-about target-section">
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full text-center">
+          <h3>Experience</h3>
+          <h1>My work experience</h1>
+        </div>
+      </div>
+      <div class="row about-content about-content--timeline">
+        <!-- <div class="col-full text-center">
+          <h3>My Work Experience.</h3>
+        </div> -->
+        <div class="col-six tab-full left">
+          <div class="timeline">
+            <div class="timeline__block">
+              <div class="timeline__bullet">
+              </div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">July 2017 - Today</p>
+                <h3>Deutsches Elektronen Synchrotron</h3>
+                <h5>Fellow researcher</h5>
+              </div>
+              <div class="timeline__desc">
+                <ul>
+                  <li> ILD software reconstruction convener </li>
+                  <li> iLCSoft stack development and adminstration </li>
+                  <li> Development of multi-threaded version of the Marlin framework </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end timeline__block -->
+            <div class="timeline__block">
+              <div class="timeline__bullet">
+              </div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">September 2013 - March 2017</p>
+                <h3>IPN Lyon</h3>
+                <h5>PhD Thesis</h5>
+              </div>
+              <div class="timeline__desc">
+                <ul>
+                  <li> Particle flow algorithm development (ArborPFA) in the ILD detector for the ILC project </li>
+                  <li> Online data quality monitoring framework development for the high energy physics domain (DQM4Hep) </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end timeline__block -->
+            <div class="timeline__block">
+              <div class="timeline__bullet">
+              </div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">March 2013 - Aout 2013</p>
+                <h3>IPN Lyon</h3>
+                <h5>Master II Thesis</h5>
+              </div>
+              <div class="timeline__desc">
+                <p> Separation of nearby hadronic shower in the SDHCAL prototype for the ILC project </p>
+              </div>
+            </div>
+            <!-- end timeline__block -->
+          </div>
+          <!-- end timeline -->
+        </div>
+        <!-- end left -->
+        <div class="col-six tab-full right">
+          <div class="timeline">
+            <div class="timeline__block">
+              <div class="timeline__bullet">
+              </div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">June 2012 - August 2012</p>
+                <h3>CERN (Geneva)</h3>
+                <h5>Master I Thesis</h5>
+              </div>
+              <div class="timeline__desc">
+                <p> Geant4 simulation of GEM detector for the CMS group of the LHC experiment </p>
+              </div>
+            </div>
+            <!-- end timeline__block -->
+            <div class="timeline__block">
+              <div class="timeline__bullet">
+              </div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">August 2011</p>
+                <h3>CERN (Geneva)</h3>
+                <h5>Internship</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Refactoring of the ILCDIRAC user interface for the LDC group</p>
+              </div>
+            </div>
+            <!-- end timeline__block -->
+            <div class="timeline__block">
+              <div class="timeline__bullet">
+              </div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">July 2011</p>
+                <h3>CPPM (Marseille)</h3>
+                <h5>Internship</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Set of cut optimisation on B meson selection for the Bs → μ+μ- channel of the LHCb experiment at LHC </p>
+              </div>
+            </div>
+            <!-- end timeline__block -->
+          </div>
+          <!-- end timeline -->
+        </div>
+        <!-- end right -->
+      </div>
+      <!-- end about-content timeline -->
+    </section>
+    <!-- end about -->
+    
+    <section id="publications" class="s-publications target-section">
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full text-center">
+          <h3>Publications</h3>
+          <h1>Proceedings, journal papers and thesis</h1>
+        </div>
+      </div>
+      <div class="row contact__main">
+        <div class="col-full tab-full contact__infos">
+          <h3> Proceedings and papers </h3>
+          <ul>
+            <li> International Large Detector: Interim Design Report </li>
+            <a href="https://arxiv.org/abs/2003.01116" class="">arXiv:2003.01116</a> (2020)
+            <li> APRIL : a novel Algorithm for Particle Reconstruction at ILC </li>
+            <a href="https://arxiv.org/abs/2002.09678" class="">arXiv:2002.09678</a> (2020)
+            <li> Parallel versions of event processing frameworks </li>
+            <a href="http://cds.cern.ch/record/2706479" class="">AIDA-2020-D3.5, http://cds.cern.ch/record/2706479</a> (2020)
+            <li> EUDAQ2 - A flexible data acquisition software framework for common test beams </li>
+            <a href="https://iopscience.iop.org/article/10.1088/1748-0221/14/10/P10033" class="">JINST, 10.1088/1748-0221/14/10/p10033</a> (2019)
+            <li> DQM4HEP : A generic data quality monitoring for high energy physics </li>
+            <a href="	https://doi.org/10.1051/epjconf/201921405036" class="">EPJ Web of Conferences 214, 05036</a> (2019)<br/>
+            <a href="http://doi.org/10.5281/zenodo.1012575" class="">v01-04-04 10.5281/zenodo.1012575</a> (2017)<br/>
+            <a href="http://cds.cern.ch/record/2291805" class="">AIDA-2020-MS67, http://cds.cern.ch/record/2291805</a> (2017)
+            <li> Tracking within Hadronic Showers in the SDHCAL prototype using Hough Transform Technique </li>
+            <a href="https://iopscience.iop.org/article/10.1088/1748-0221/12/05/P05009" class="">JINST, 10.1088/1748-0221/12/05/p05009</a> (2017)
+            <li> Separation of nearby hadronic showers in the CALICE SDHCAL prototype detector using ArborPFA </li>
+            <a href="http://cds.cern.ch/record/2669487" class=""> CALICE-CAN-2015-001 </a> (2015)
+            <li> Construction and commissioning of a technological prototype of a high-granularity semi-digital hadronic calorimeter </li>
+            <a href="https://iopscience.iop.org/article/10.1088/1748-0221/10/10/P10039" class=""> JINST. 10. 10.1088/1748-0221/10/10/P10039 </a> (2015)
+          </ul> 
+          <h3> Thesis </h3>
+          <ul>
+            <li> <span style="font-weight: bold;">PhD thesis</span> - Développement d’un algorithme de suivi de particules pour l’ILC : outils de surveillance de qualité de données en ligne</li>
+            <a href="http://www.theses.fr/2017LYSE1034/document" class=""> 2017LYSE1034 </a> (2017)
+            <li> <span style="font-weight: bold;">Master II thesis</span> - Séparation de gerbes hadroniques proches dans le calorimètre hadronique semi-digital (SDHCAL) pour l'ILC</li>
+            <a href="documents/M2.pdf" class=""> Thesis document </a> (2013)
+            <li> <span style="font-weight: bold;">Master I thesis</span> - Simulation Geant4 d'un détecteur GEM pour l'extraction de la sensibilité aux photons dans le cadre de l'upgrade du détecteur CMS au LHC</li>
+            <a href="documents/M1.pdf" class=""> Thesis document </a> (2012)
+          </ul>  
+        </div>
+      </div>
+    </section>
+    
+    <!-- works    ================================================== -->
+    <section id="projects" class="s-works target-section">
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full">
+          <h3>Projects</h3>
+          <h1>HEP computing projects.</h1>
+        </div>
+      </div>
+      <div class="row masonry-wrap">
+        <div class="masonry">
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a href="https://github.com/DQM4hep" class="" title="DQM4hep" data-size="1050x700">
+                  <img src="images/portfolio/dqm4hep-logo_dark-symbolo2.png" srcset="images/portfolio/dqm4hep-logo_dark-symbolo2.png 1x, images/portfolio/dqm4hep-logo_dark-symbolo2.png 2x" alt=""/>
+                  <span class="shadow-overlay">
+                  </span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title"> DQM4hep </h3>
+                <p class="item-folio__cat"> Data Quality Monitoring </p>
+              </div>
+              <a href="https://github.com/DQM4hep" class="item-folio__project-link" title="Project link">
+                <i class="im im-link">
+                </i>
+              </a>
+              <div class="item-folio__caption">
+              </div>
+            </div>
+            <!-- end item-folio -->
+          </div>
+          <!-- end masonry__brick -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a href="https://github.com/ArborPFA" class="thumb-link" title="ArborPFA / APRIL" data-size="1050x700">
+                  <img src="images/portfolio/pfa_evt_display2.png" srcset="images/portfolio/pfa_evt_display2.png 1x, images/portfolio/pfa_evt_display2.png 2x" alt=""/>
+                  <span class="shadow-overlay">
+                  </span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title"> ArborPFA / APRIL </h3>
+                <p class="item-folio__cat"> Particle Flow Reconstruction </p>
+              </div>
+              <a href="https://github.com/ArborPFA" class="item-folio__project-link" title="Project link">
+                <i class="im im-link">
+                </i>
+              </a>
+              <div class="item-folio__caption">
+              </div>
+            </div>
+            <!-- end item-folio -->
+          </div>
+          <!-- end masonry__brick -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a href="https://github.com/iLCSoft" class="thumb-link" data-size="1050x700">
+                  <img src="images/portfolio/ilcsoft2.png" srcset="images/portfolio/ilcsoft2.png 1x, images/portfolio/ilcsoft2.png 2x" alt=""/>
+                  <span class="shadow-overlay">
+                  </span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title"> iLCSoft </h3>
+                <p class="item-folio__cat"> ILC Software stack </p>
+              </div>
+              <a href="https://github.com/iLCSoft" class="item-folio__project-link" title="Project link">
+                <i class="im im-link">
+                </i>
+              </a>
+              <span class="item-folio__caption">
+              </span>
+            </div>
+            <!-- end item-folio -->
+          </div>
+          <!-- end masonry__brick -->
+        </div>
+      </div>
+      <!-- end masonry -->
+    </section>
+    <!-- end works -->
+<!-- s-stats    ================================================== -->
+<section id="contact" class="s-contact target-section">
+  <div class="overlay">
+  </div>
+  <div class="row narrow section-intro">
+    <div class="col-full">
+      <h3>Contact</h3>
     </div>
-
-	  <!-- NAVIGATION -->
-		<div id="nav_bar_wrap" class="outer">
-		</div>
-
-		<!-- MAIN CONTENT -->
-		<div id="main_content_wrap" class="outer">
-			<section id="main_content" class="inner">
-				<h1> Welcome ! </h1>
-				<section>
-				<p>This website gathers different resources about my profesional carrier</p>
-				<ul>
-					<li>A complete <a href="/pages/CV.html">CV</a></li>
-					<li>List of <a href="/pages/projects.html">projects</a> I've been working on</li>
-					<li>Where and how to <a href="/pages/CV.html">contact me</a></li>
-					<li>Scientific papers and various resources</li>
-				</ul>
-				<p>
-					As my work consists most of time in software development, you might want to have a look
-					to my <a href="https://github.com/rete">Github</a> page where you can evaluate in which project
-					I'm currently active.
-				</p>
-				<p>Enjoy your visit !</p>
-				<p> Rémi </p>
-			</section>
-		</div>
-
-		<!-- FOOTER  -->
-		<div id="footer_wrap" class="outer">
-		</div>
-	</body>
+  </div>
+  <div class="row contact__main">
+    <div class="col-four tab-full contact__infos">
+      <h4 class="h06">Phone</h4>
+      <p>Phone: +49 40 8998 2069                </p>
+    </div>
+    <div class="col-four tab-full contact__infos">
+      <h4 class="h06">Email</h4>
+      <p> <a class="" href="mailto:remi.ete@desy.de">remi.ete@desy.de</a> </p>
+    </div>
+    <div class="col-four tab-full contact__infos">
+      <h4 class="h06">Address</h4>
+      <p>		Deutsch Elektronen Synchrotron<br/>		Notkestra&#223;e 85<br/>		22607 Hamburg                </p>
+    </div>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26806.563764732946!2d9.87184859366288!3d53.568693811644174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18432319c54af%3A0x3952ed73e492578f!2sDeutsches+Elektronen-Synchrotron+DESY!5e0!3m2!1sfr!2sfr!4v1507031393236" width="60%" height="500" frameborder="0" style="position:relative; left:20%; border:0" allowfullscreen>
+  </iframe>
+</section>
+<!-- end s-contact -->
+<!-- footer    ================================================== -->
+<footer>
+  <div class="row">
+    <div class="col-full">
+      <div class="footer-logo">
+        <a class="footer-site-logo" href="#0">
+          <img src="images/logo2.png" alt="Homepage">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row footer-bottom">
+      <div class="col-twelve">
+        <div class="copyright">
+          <span>© Copyright Hola 2017</span>
+          <span>Design by <a href="https://www.styleshout.com/">styleshout</a>
+        </span>
+      </div>
+      <div class="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+          <i class="im im-arrow-up" aria-hidden="true">
+          </i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end footer-bottom -->
+</footer>
+<!-- end footer -->
+<!-- photoswipe background    ================================================== -->
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+  <div class="pswp__bg">
+  </div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)">
+        </button>
+        <button class="pswp__button pswp__button--share" title=                    "Share">
+        </button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen">
+        </button>
+        <button class="pswp__button pswp__button--zoom" title=                    "Zoom in/out">
+        </button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title=                "Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end photoSwipe background -->
+<div id="preloader">
+  <div id="loader">
+  </div>
+</div>
+<!-- Java Script    ================================================== -->
+<script src="js/jquery-3.2.1.min.js">
+</script>
+<script src="js/plugins.js">
+</script>
+<script src="js/main.js">
+</script>
+</body>
 </html>
